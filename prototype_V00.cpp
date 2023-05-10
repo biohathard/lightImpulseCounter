@@ -30,6 +30,10 @@ void setup() {
 
 void loop() {
   int value = analogRead(analogPin);
+/////
+  unsigned long currentMillis1 = millis();
+/////  
+  
 ///// Update the display only if value will be significaly changed
   if (value <= (lastValue - valueSdvig)||value >= (lastValue + valueSdvig)){
     lastValue = value;
